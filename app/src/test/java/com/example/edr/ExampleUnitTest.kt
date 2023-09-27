@@ -14,4 +14,12 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    @Test
+    fun iguales_EDR(){
+        val p1 = Persona(nombre = "Paco", edad = 34)
+        val p2 = Persona(nombre = "Paco", edad = 34)
+
+        assertEquals(p1,p2)
+    }
 }
