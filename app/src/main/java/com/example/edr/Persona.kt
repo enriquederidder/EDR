@@ -28,10 +28,8 @@ class Persona {
     fun saludar() {
         println("Hola, mi nombre es $nombre y tengo $edad años.")
     }
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (other !is Persona) return false
-        return (nombre == other.nombre) && (edad == other.edad)
+    fun sonIguales(otraPersona: Persona): Boolean {
+        return nombre == otraPersona.nombre && edad == otraPersona.edad
     }
 
 }

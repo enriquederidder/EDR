@@ -19,7 +19,9 @@ class ExampleUnitTest {
     fun iguales_EDR(){
         val p1 = Persona(nombre = "Paco", edad = 34)
         val p2 = Persona(nombre = "Paco", edad = 34)
+        p1.saludar()
 
-        assertEquals(p1,p2)
+        assertTrue(p1.sonIguales(p2))
     }
+
 }
